@@ -127,19 +127,21 @@ class MainActivity : AppCompatActivity() {
 
     private fun findPlayer() {
         if(currentPlayer == "X"){
-            oyuncuOne.setBackgroundColor(Color.DKGRAY)
-            oyuncuTwo.setBackgroundColor(Color.GRAY)
+            /*oyuncuOne.setBackgroundColor(Color.DKGRAY)
+            oyuncuTwo.setBackgroundColor(Color.GRAY)*/
+            oyuncuOne.setBackgroundResource(R.drawable.round_back_white_stroke)
+            oyuncuTwo.setBackgroundResource(R.drawable.wound_back_white)
 
         }else{
-            oyuncuTwo.setBackgroundColor(Color.DKGRAY)
-            oyuncuOne.setBackgroundColor(Color.GRAY)
+            oyuncuTwo.setBackgroundResource(R.drawable.round_back_white_stroke)
+            oyuncuOne.setBackgroundResource(R.drawable.wound_back_white)
         }
     }
 
     // Oyun tahtasını sıfırlayan fonksiyon
     private fun resetBoard() {
-        oyuncuOne.setBackgroundColor(Color.DKGRAY)
-        oyuncuTwo.setBackgroundColor(Color.GRAY)
+        oyuncuOne.setBackgroundResource(R.drawable.round_back_white_stroke)
+        oyuncuTwo.setBackgroundResource(R.drawable.wound_back_white)
         for (i in 0 until 3) {
             for (j in 0 until 3) {
                 board[i][j]?.text = ""
