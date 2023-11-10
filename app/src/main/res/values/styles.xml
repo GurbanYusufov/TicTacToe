@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TicTacToeButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">94sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#8394FA</item>
+    </style>
+
+
+</resources>

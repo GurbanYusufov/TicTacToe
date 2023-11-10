@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#8394FA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oyuncu1"
+            style="@style/TicTacToeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Player One\nX"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/oyuncu2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oyuncu2"
+            style="@style/TicTacToeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Player Two\nO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/oyuncu1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_00"
+                style="@style/TicTacToeButton"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_01"
+                style="@style/TicTacToeButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_02"
+                style="@style/TicTacToeButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_10"
+                style="@style/TicTacToeButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_11"
+                style="@style/TicTacToeButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_12"
+                style="@style/TicTacToeButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_20"
+                style="@style/TicTacToeButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_21"
+                style="@style/TicTacToeButton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_22"
+                style="@style/TicTacToeButton" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Reset Board"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
